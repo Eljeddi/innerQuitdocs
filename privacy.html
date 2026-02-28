@@ -56,7 +56,7 @@
             margin-bottom: 10px;
         }
 
-        .disclaimer {
+        .disclaimer-box {
             background-color: #fff3cd;
             border-left: 5px solid #ffecb5;
             padding: 15px;
@@ -87,7 +87,7 @@
 
 <div class="container">
     <h1>innerQuit Privacy Policy</h1>
-    <p class="effective-date">Effective Date: February 20, 2026</p>
+    <p class="effective-date">Effective Date: February 28, 2026</p>
 
     <h2>1. Introduction</h2>
     <p>This Privacy Policy describes how we collect, use, and share information when you use the <strong>innerQuit</strong> mobile application.</p>
@@ -95,38 +95,44 @@
     <h2>2. Information We Collect</h2>
     <p>To help you quit smoking through mindfulness and progress tracking, we collect the following data stored in Google Firebase:</p>
     <ul>
+        <li><strong>Account Information:</strong> We use Firebase Authentication to manage your account. This may include your email address or a unique social identifier.</li>
+        <li><strong>Personalization Data:</strong> We collect your <strong>preferred name</strong> to personalize your experience within the app.</li>
         <li><strong>Health and Habit Data:</strong> Cigarettes smoked per day, cost per pack, and your personal reasons for quitting.</li>
         <li><strong>Progress Tracking:</strong> Quit date, journey start status, daily progress logs, and your mindfulness diary entries.</li>
+        <li><strong>Payment Information:</strong> We do not collect or store your billing details. All In-App Purchases are processed securely through the <strong>Google Play Store</strong>.</li>
     </ul>
 
     <h2>3. How We Use Your Data</h2>
     <p>We use the collected information for the following purposes:</p>
     <ul>
-        <li><strong>App Functionality:</strong> To calculate your health milestones, financial savings, and provide personalized mindfulness exercises.</li>
-        <li><strong>Personalization:</strong> To tailor the app experience based on your preferred name and quit reasons.</li>
-    }   <li><strong>Progress Tracking:</strong> To maintain your quit-streak and store your mindfulness diary entries securely.</li>
+        <li><strong>App Functionality:</strong> To calculate your health milestones, financial savings, and provide mindfulness exercises.</li>
+        <li><strong>Personalization:</strong> To tailor the app experience using your <strong>preferred name</strong> and quit reasons.</li>
+        <li><strong>Progress Tracking:</strong> To maintain your quit-streak and store your mindfulness diary entries securely via Cloud Firestore.</li>
     </ul>
 
     <h2>4. Data Storage and Security</h2>
-    <p><strong>Storage:</strong> Your data is stored using Google Firebase (Firestore).</p>
-    <p><strong>Security:</strong> We transmit all data over secure HTTPS (SSL/TLS) connections to ensure it is encrypted in transit.</p>
+    <p><strong>Storage:</strong> Your data is stored using Google Firebase (Firestore). We utilize Firebase Security Rules to ensure that only you can access your personal data.</p>
+    <p><strong>Security:</strong> We transmit all data over secure HTTPS connections to ensure it is encrypted in transit.</p>
 
     <h2>5. Third-Party Services</h2>
-    <p>We use Google Firebase to provide core app services. For more information, please review the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.</p>
+    <p>We use Google Firebase to provide core app services (Authentication, Database, Analytics). For more information, please review the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.</p>
 
     <h2>6. Account and Data Deletion</h2>
     <p>We respect your right to privacy. You can request the deletion of your account and all associated data at any time:</p>
     <ul>
-        <li><strong>In-App:</strong> Visit the "Profile" tab to initiate deletion.</li>
+        <li><strong>In-App:</strong> Visit the "Profile" or "Settings" tab to initiate account deletion.</li>
         <li><strong>Online:</strong> Contact us at <a href="mailto:oussemaeljeddi@gmail.com">oussemaeljeddi@gmail.com</a>.</li>
     </ul>
 
-    <div class="disclaimer">
-        <h2>7. Medical Disclaimer</h2>
-        <p><strong>innerQuit is not a medical device.</strong> The App provides motivational and mindfulness tools to support your journey but does not provide medical diagnosis, treatment, or advice. Always consult with a healthcare professional for medical concerns.</p>
+    <h2>7. Children's Privacy</h2>
+    <p>Our services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers.</p>
+
+    <div class="disclaimer-box">
+        <h2>8. Medical Disclaimer</h2>
+        <p><strong>innerQuit is not a medical device.</strong> The App provides motivational and mindfulness tools to support your journey but does not provide medical diagnosis, treatment, or advice. Always consult with a healthcare professional for medical concerns or smoking cessation treatments.</p>
     </div>
 
-    <h2>8. Contact Us</h2>
+    <h2>9. Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at:<br>
     <a href="mailto:oussemaeljeddi@gmail.com">oussemaeljeddi@gmail.com</a></p>
 </div>
